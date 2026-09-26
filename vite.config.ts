@@ -31,10 +31,4 @@ function imageProxy(): Plugin {
   }
 }
 
-const allowedHosts = ['watchsize.mebn.dev']
-
-export default defineConfig({
-  plugins: [react(), imageProxy()],
-  server: { allowedHosts },
-  preview: { allowedHosts },
-})
+export default defineConfig({ plugins: [react(), imageProxy()] })
